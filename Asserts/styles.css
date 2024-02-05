@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Exo";
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(241, 231, 218, 0.099);
+}
+
+header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(241, 231, 218, 0.601);
+    width: 80%;
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 5px 5px rgba(182, 175, 164, 0.794);
+}
+header img{
+    height: 60px;
+    width: 55px;
+}
+.header-p{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgba(177, 60, 40, 0.589);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+
+.add-new-element-section{
+    margin-top: 50px;
+    border-radius: 30px;
+    height: 70px;
+    background-color: rgba(241, 231, 218, 0.601);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px rgba(146, 53, 37, 0.9);
+}
+
+.add-new-element-section input{
+    text-decoration: none;
+    border: 0px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 90%;
+    padding-left: 60px;
+
+    font-size: 30px;
+    font-family: "Exo";
+    font-weight: 400;
+}
+.add-new-element-section input:focus{
+    border-color: red;
+}
+
+.add-btn{
+    border: 0px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 20%;
+    background-color: rgba(177, 60, 40, 0.589);
+
+    font-size: 40px;
+    font-family: "Exo";
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.tasks{
+    border-radius: 30px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    padding: 13px 8px 13px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+li p{
+    margin: 0px;
+    padding-right: 40px;
+    width: 250px;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/radio.png);
+    background-size: cover;
+    background-position: center;
+    top: 13px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/correct.png);
+    height: 24px;
+    width: 24px;
+    left: 10px;
+}.remove-btn img{
+    width: 20px;
+}
+.remove-btn{
+    text-decoration: none;
+    border: 0px;
+    background-color: transparent;
+}
+li .date-p{
+    font-size: 15px;
+}
